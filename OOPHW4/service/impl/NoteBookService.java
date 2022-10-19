@@ -1,13 +1,13 @@
-package OOP_HW4.service.impl;
-
-import OOP_HW4.service.ComputerService;
-import OOP_HW4.data.Memory;
-import OOP_HW4.data.impl.NoteBook;
-import OOP_HW4.service.Printable;
+package OOPHW4.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
+
+import OOPHW4.data.Memory;
+import OOPHW4.data.impl.NoteBook;
+import OOPHW4.service.ComputerService;
+import OOPHW4.service.Printable;
 
 public class NoteBookService extends ComputerService<NoteBook> implements Printable<NoteBook> {
     @Override

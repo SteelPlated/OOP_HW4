@@ -1,12 +1,12 @@
-package OOP_HW4.controller;
-
-import OOP_HW4.controller.impl.DesktopController;
-import OOP_HW4.controller.impl.NotebookController;
-import OOP_HW4.data.Computer;
-import OOP_HW4.data.impl.Desktop;
-import OOP_HW4.data.impl.NoteBook;
+package OOPHW4.controller;
 
 import java.util.List;
+
+import OOPHW4.controller.impl.DesktopController;
+import OOPHW4.controller.impl.NotebookController;
+import OOPHW4.data.Computer;
+import OOPHW4.data.impl.Desktop;
+import OOPHW4.data.impl.NoteBook;
 
 public class MenuController {
     private final NotebookController notebookController;
@@ -22,8 +22,8 @@ public class MenuController {
 
 
     public void menu(){
-        String answer = ("Приветствуем Вас в нашем магазине!\n1. Хотите подобрать себе ноутбук?" +
-                "\n2. Хотите подобрать себе стационарный компьютер?\nНапишите 1, или 2");
+        String answer = ("1. Выбираем ноутбук" +
+                "\n2. Выбираем стационарный ПК\nНапишите 1, или 2");
         int result = computerController.inputNumber(answer);
         switch (result){
             case 1:

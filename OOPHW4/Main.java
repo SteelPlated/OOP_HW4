@@ -1,6 +1,6 @@
-package OOP_HW4;
+package OOPHW4;
 
-import OOP_HW4.controller.MenuController;
+import OOPHW4.controller.MenuController;
 
 public class Main {
     public static void main(String[] args) {

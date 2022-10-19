@@ -1,11 +1,11 @@
-package OOP_HW4.controller;
-
-import OOP_HW4.data.Computer;
-import OOP_HW4.data.Memory;
-import OOP_HW4.service.ComputerService;
+package OOPHW4.controller;
 
 import java.util.List;
 import java.util.Scanner;
+
+import OOPHW4.data.Computer;
+import OOPHW4.data.Memory;
+import OOPHW4.service.ComputerService;
 
 public class ComputerController<T extends Computer> {
     private final ComputerService<T> computerService;
@@ -27,7 +27,7 @@ public class ComputerController<T extends Computer> {
         if (input.hasNextInt()) {
             num = input.nextInt();
         } else {
-            System.out.println("Ошибка ввода.");
+            System.out.println("Ошибка");
             input.next();
             num = inputNumber(str);
         }
@@ -35,14 +35,14 @@ public class ComputerController<T extends Computer> {
     }
 
     public List<T> inputModel(List<T> list){
-        String question = "У нас представлены модели Msi, Aser, Iru, Dell." +
+        String question = "Представлены модели Msi, Aser, Iru, Dell." +
                 "\nНапишите название модели из списка выше.";
         String modelName = inputString(question);
         return computerService.filterModel(modelName, list);
     }
 
     public List<T> inputRAW(List<T> list){
-        String question = "Сколько вы хотите оперативной памяти?\nSIXTEEN или FOUR Гб." +
+        String question = "Выберите обьем оперативной памяти\nSIXTEEN или FOUR Гб." +
                 "\nНапишите значение из списка выше.";
         Memory raw = Memory.valueOf(inputString(question));
         return computerService.filterMemory(raw, list);

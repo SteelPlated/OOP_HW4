@@ -1,10 +1,10 @@
-package OOP_HW4.controller.impl;
-
-import OOP_HW4.controller.ComputerController;
-import OOP_HW4.data.impl.Desktop;
-import OOP_HW4.service.impl.DesktopService;
+package OOPHW4.controller.impl;
 
 import java.util.List;
+
+import OOPHW4.controller.ComputerController;
+import OOPHW4.data.impl.Desktop;
+import OOPHW4.service.impl.DesktopService;
 
 public class DesktopController extends ComputerController<Desktop> {
     private final DesktopService desktopService;
@@ -20,7 +20,7 @@ public class DesktopController extends ComputerController<Desktop> {
         return desktopService.desktopList();
     }
     public List<Desktop> inputPowerSupply(List<Desktop> list){
-        String question = "Выберите мощность блока питания 350, 650, 800." +
+        String question = "Выберите блок питания по мощности 350, 650, 800." +
                 "\nНапишите значение из списка выше.";
         int powerSupply = inputNumber(question);
         return desktopService.filterPowerSupply(powerSupply, list);

@@ -1,9 +1,9 @@
-package OOP_HW4.service;
-
-import OOP_HW4.data.Computer;
-import OOP_HW4.data.Memory;
+package OOPHW4.service;
 
 import java.util.List;
+
+import OOPHW4.data.Computer;
+import OOPHW4.data.Memory;
 
 public class ComputerService<T extends Computer> {
 

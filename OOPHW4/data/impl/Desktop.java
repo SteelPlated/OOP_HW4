@@ -1,7 +1,7 @@
-package OOP_HW4.data.impl;
+package OOPHW4.data.impl;
 
-import OOP_HW4.data.Memory;
-import OOP_HW4.data.Computer;
+import OOPHW4.data.Computer;
+import OOPHW4.data.Memory;
 
 public class Desktop extends Computer {
 
@@ -25,7 +25,7 @@ public class Desktop extends Computer {
         return "Desktop{" +
                 "id=" + getId() +
                 "; модель=" + getModel() +
-                "; оперативка=" + getMemory() +
+                "; оперативная память=" + getMemory() +
                 "; объем диска=" + getSsd() +
                 "; мощность блока питания=" + powerSupply +
                 '}';
