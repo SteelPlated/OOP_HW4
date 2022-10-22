@@ -2,7 +2,6 @@ package OOPHW4.controller;
 
 import java.util.List;
 import java.util.Scanner;
-
 import OOPHW4.data.Computer;
 import OOPHW4.data.Memory;
 import OOPHW4.service.ComputerService;
